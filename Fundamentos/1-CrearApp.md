@@ -17,12 +17,6 @@ npm install -g npm@latest
 - Posibilidad de probar apps en móvil, emulador o navegador web.
 - Instalación sencilla de dependencias y librerías.
 
-**Descargar Expo Go**
-
-<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/4a47c0c3-cebe-4c4d-9e7a-d98cc4c20b5c" />
-
-[Descargar Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=es_SV)
-
 ## Crear App con Expo
 
 **PASO 1:** acceder a la carpeta de proyectos.
