@@ -1,4 +1,4 @@
-# Introduccion App en React Native
+# Introduccion a React Native
 
 ## Requisitos
 - Node.js ultima version (22.20.x) [Descargar](https://nodejs.org/es/download)
