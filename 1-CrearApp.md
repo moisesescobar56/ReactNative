@@ -55,16 +55,47 @@ npx create-expo-app@latest AppIntro --template blank
 
 <img width="1054" height="426" alt="image" src="https://github.com/user-attachments/assets/02e26ca5-f3e7-41aa-b9f1-7aeb37752e1c" />
 
-**PASO 4:** acceder a la nueva carpeta y abrirla en VS Code.
+**PASO 4:** acceder a la nueva carpeta e instalar las dependencias web.
 ```code
 cd AppIntro
+```
+```code
+npx expo install react-dom react-native-web
+```
+<img width="1053" height="448" alt="image" src="https://github.com/user-attachments/assets/e8cf3adf-5885-4b47-85fb-0b5e75130665" />
+
+
+**PASO 5:** abrir la app en VS Code.
+```code
 code .
 ```
 
-<img width="1053" height="242" alt="image" src="https://github.com/user-attachments/assets/c793c27b-2586-458c-9a7c-ee893cc29403" />
+<img width="1053" height="448" alt="image" src="https://github.com/user-attachments/assets/e0f36cc9-cd85-41e4-a303-066868c598b3" />
+
+**PASO 6:** Dar click en **"Yes, I trust the authors"**.
+
+<img width="1800" height="1020" alt="image" src="https://github.com/user-attachments/assets/76fd11c9-af6a-40f9-b7c3-087966cceebd" />
 
 **Resultado:**
-<img width="1800" height="1020" alt="image" src="https://github.com/user-attachments/assets/372eefb9-89f0-4f02-88f0-37c27e77b88d" />
 
-**PASO 5:**
+<img width="1574" height="690" alt="image" src="https://github.com/user-attachments/assets/46b1eb23-0c82-41c3-9798-3418e1007c09" />
 
+**PASO 7:** activa NPM Scripts.
+
+<img width="1573" height="690" alt="image" src="https://github.com/user-attachments/assets/207a84b7-6e53-4fbb-b7f0-28ca4480eb24" />
+
+**PASO 8:** ejecuta la App en modo web.
+
+<img width="1573" height="690" alt="image" src="https://github.com/user-attachments/assets/3d988130-853d-4ce1-8eab-4bb506a82f8c" />
+
+**Resultado:**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8fc3f9c6-32f9-48d6-8bba-8e59a43f8190" />
+
+**PASO 9:** actualiza el archivo **App.js** y coloca **"Hola Mundo"**.
+
+<img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/277608a8-7d3b-4e27-a7a8-4f0cefc14d41" />
+
+
+**Resultado:**
+
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/a72abac7-5b54-4f8a-8311-c3b13ad2fa75" />
