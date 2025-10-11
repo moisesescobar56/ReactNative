@@ -2,8 +2,6 @@
 
 ## Requisitos
 - Cuenta de GitHub.
-- Conocimientos basicos de Git.
-- Haber recibido una invitacion para colaborar en el repositorio.
 
 ## Agregar miembros al repositorio (Propietario del repositorio)
 
