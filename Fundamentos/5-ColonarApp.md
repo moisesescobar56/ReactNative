@@ -109,6 +109,7 @@ npm install
 <img width="1600" height="838" alt="image" src="https://github.com/user-attachments/assets/8b409e81-f912-41fc-96f3-55dffb18c1f1" />
 
 **Resultado:** ahora ya tienes listo tu repositorio clonado.
+
 <img width="1600" height="838" alt="image" src="https://github.com/user-attachments/assets/904b96a3-a60a-44a2-8786-895fc30c0916" />
 
 
