@@ -32,8 +32,11 @@
 
 <img width="1445" height="1057" alt="image" src="https://github.com/user-attachments/assets/2803ce3b-30c8-4976-9c84-aef1f777f926" />
 
-**NOTA:** repetir los paso 3,4 y 5 por cada integrante.
 
+> [!NOTE]
+> Repetir los paso 3,4 y 5 por cada integrante.
+
+ 
 ## Aceptar invitacion para colaborar (Invitado)
 
 > [!IMPORTANT]
