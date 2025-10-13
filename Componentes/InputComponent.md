@@ -57,3 +57,9 @@ const styles = StyleSheet.create({
     }
 });
 ```
+
+```js
+<Input label="Email:" placeholder="name@mail.com" type="email-addres" />
+      <Input label="Asunto:" placeholder="Consulta" />
+      <Input label="Mensaje:" placeholder="Escribir aqui..." lines={4}/>
+```
