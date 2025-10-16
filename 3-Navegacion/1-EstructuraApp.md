@@ -45,6 +45,7 @@
 npx create-expo-app@latest AppNoticias --template blank
 cd AppNoticias
 npx expo install react-dom react-native-web
+npm install react-native-safe-area-context
 code .
 ```
 
