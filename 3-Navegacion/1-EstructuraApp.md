@@ -100,13 +100,13 @@ const styles = StyleSheet.create({
 ```js
 import { TextInput, Text, View, StyleSheet } from "react-native";
 
-export default function Input({ label, placeholder, type = "default", editable = true, lines = 1, value = "", onChangeText }){
+export default function Input({ label, placeholder, type = "default", editable = true, lines = 1, value = "", onChangeText, hideText = false }){
     return (
         <View style={styles.container} >
             <Text style={styles.label} >{label}</Text>
             <TextInput 
                 placeholder={placeholder}
-                keyboardType= {type}
+                keyboardType={type}
                 editable = {editable}
                 style={ lines > 1? styles.textArea : styles.control }
                 placeholderTextColor="#999"
@@ -115,6 +115,7 @@ export default function Input({ label, placeholder, type = "default", editable =
                 textAlignVertical="top"
                 value={value}
                 onChangeText={onChangeText}
+                secureTextEntry={hideText}
              />
         </View>
     );
