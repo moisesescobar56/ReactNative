@@ -1,4 +1,4 @@
-# Pantallas de la App
+# Estructura de la App
 
 **¿Por donde inicio el desarrollo de una app?**
 1. **Documentacion y Analisis:** lo ideal es crear un prototipo y visualizar las pantallas a desarrollar con la calidad esperada.
@@ -16,7 +16,7 @@
 
 ## Estructura de archivos App
 
-**Indicacion:** crea las siguientes carpetas y archivos en tu proyectos.
+**Indicacion:** crea las siguientes carpetas y archivos en tu proyecto.
 
 > [!NOTE]
 > En la carpeta `📁screens` crea las pantallas de tu proyecto.
