@@ -49,6 +49,7 @@ import ViewNewScreen from './screens/ViewNewScreen';
 // importar react navigation
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+
 // crear Stack
 const Stack = createStackNavigator();
 
@@ -58,8 +59,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={AppTabs} options={{ headerShown: false }} />
-        <Stack.Screen name="New" component={NewScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="ViewNew" component={ViewNewScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="New" component={NewScreen} options={{ title: "Noticias" }}  />
+        <Stack.Screen name="ViewNew" component={ViewNewScreen} options={{ title: "Ver Noticia" }}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
