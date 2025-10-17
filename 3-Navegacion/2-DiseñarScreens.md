@@ -10,9 +10,7 @@
 5. **Despligue:** has entrega de la [version beta](https://es.wikipedia.org/wiki/Ciclo_de_vida_del_lanzamiento_de_software#Beta) de la app a los usuarios finales.
 6. **Implementacion:** entrega la [version final (RC)](https://es.wikipedia.org/wiki/Ciclo_de_vida_del_lanzamiento_de_software#Versi%C3%B3n_candidata_a_definitiva_(RC)) al cliente/product owner.
 
-<img width="414" height="146" alt="image" src="https://github.com/user-attachments/assets/a3551759-96c0-48b0-a4c9-907cbb011387" />
-
-[Leer más](https://support.google.com/a/answer/11202276?hl=es)
+<img width="1284" height="724" alt="image" src="https://github.com/user-attachments/assets/0b7bc00f-6ec4-4025-b521-075c04ebdc31" />
 
 ## Diseño de pantallas
 
