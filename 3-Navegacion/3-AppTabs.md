@@ -77,4 +77,45 @@ export default function App() {
 <img width="458" height="816" alt="image" src="https://github.com/user-attachments/assets/9297a797-b155-4046-bfa4-aec563bf736f" />
 
 ## Implementar iconos
-En proceso...
+
+**PASO 1:** instalar `vector-icons` e importarlo en el archivo **`📁nagivation > AppTabs.js`**.
+```code
+npm install react-native-vector-icons
+```
+
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/ab35968a-7ffc-46b5-8467-fae8b596e742" />
+
+
+**PASO 2:** editar en el archivo el `<Tab.Navigator>`.
+
+```js
+screenOptions={({ route }) => ({
+    headerShown: false,
+    tabBarShowLabel: true,
+    tabBarActiveTintColor: '#0051CA', // color tabs
+    tabBarInactiveTintColor: 'gray',
+
+    // configurar icono segun name
+    tabBarIcon: ({ color, size, focused }) => {
+      let iconName;
+
+      if (route.name === 'Login') {
+        iconName = focused ? 'key' : 'key-outline';
+      } else if (route.name === 'Register') {
+        iconName = focused ? 'person' : 'person-outline';
+      }
+
+      return <Ionicons name={iconName} size={size} color={color} />;
+    },
+  })}  
+```
+
+<img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/9226d298-b8ad-4029-8e26-c439643a447e" />
+
+**PASO 3:** iniciar la app y verifica que funcionen los tabs.
+
+### Tab > LoginScreen 
+<img width="463" height="812" alt="image" src="https://github.com/user-attachments/assets/d8622119-5987-476c-abfe-f1ce6bbf5e60" />
+
+### Tab > RegisterScreen 
+<img width="451" height="813" alt="image" src="https://github.com/user-attachments/assets/05833fab-1225-47da-ba3a-025a461294d7" />
