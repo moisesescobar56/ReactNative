@@ -67,7 +67,7 @@ export default function App() {
 }
 ```
 
-<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/02891037-5c56-4ad7-a6fc-5fe0d60cf1b9" />
+<img width="1924" height="1024" alt="image" src="https://github.com/user-attachments/assets/b454779a-3be6-4459-8a56-01051f8e3062" />
 
 **PASO 5:** iniciar la app y verifica que funcionen los tabs.
 
