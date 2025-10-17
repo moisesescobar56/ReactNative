@@ -163,7 +163,7 @@ export default function NewScreen(){
     return (
         <Layout>
             <Input 
-                label="Titular"
+                label="Buscar"
                 placeholder="escribir aqui..."
                 type="default"
                 value={titulo}
@@ -176,10 +176,10 @@ export default function NewScreen(){
 > [!TIP]
 > Crea las variables cuando diseñes las pantallas que tienen `<Input />`. En este caso `nombre`, `genero`, `email`, `clave` y `confirmarClave`.
 
-<img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/a616fbfb-c911-4478-b438-f51bb1df0754" />
+<img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/9151a8da-20b2-4590-9403-c2376f27d643" />
 
 **Resultado:**
-<img width="461" height="814" alt="image" src="https://github.com/user-attachments/assets/89efade4-cfc0-4443-a3c5-a73359e04e38" />
+<img width="454" height="811" alt="image" src="https://github.com/user-attachments/assets/821006ca-d083-4a92-b305-b4b0cc8c8280" />
 
 **ViewNewScreen.js**
 ```js
