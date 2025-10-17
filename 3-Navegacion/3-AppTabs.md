@@ -58,8 +58,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={AppTabs} options={{ headerShown: false }} />
-        <Stack.Screen name="Register" component={NewScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Register" component={ViewNewScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="New" component={NewScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="ViewNew" component={ViewNewScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
