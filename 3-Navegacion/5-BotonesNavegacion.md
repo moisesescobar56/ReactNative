@@ -45,7 +45,7 @@ function entrar(){
 <img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/eb735dbe-70ba-4ddc-b578-6be534a0d3e9" />
 
 > [!NOTE]
-> El objeto `navigation` da acceso a functions como **`.navigate()`** y **`.goBack()`**
+> El objeto `navigation` da acceso a functions como **`.navigate()`** y **`.goBack()`**\
 > **`.navigate()`** se usa para ir a otra pantalla y **`.goBack()`** para regresar a la anterior.
 
 **PASO 4:** implementar boton de **NAVEGACION**, agrega el evento `onPress` el boton correspondiente y usa `navigation.navigate()` para redireccionar al usuario a la screen.
