@@ -11,8 +11,19 @@ Aprenderás a manejar la electricidad de la misma manera que el agua: tiene un f
 | **Corriente** | I | Amperios (A) | Flujo o caudal | El **flujo** de electrones a través de un circuito. |
 | **Resistencia** | R | Ohmios ($\Omega$) | Tubería estrecha/Válvula | La **oposición** al flujo de corriente. |
 | **Ley de Ohm** | | | | La relación fundamental: **$V = I \times R$** |
-| **LED** | | | | Diodo Emisor de Luz. Solo permite el paso de corriente en un sentido: del **Ánodo** (pata larga, +) al **Cátodo** (pata corta, -). |
-| **Protoboard** | | | | Placa de pruebas reutilizable para montar circuitos sin soldar. |
+
+### 1.1 Diodo LED
+
+<img width="617" height="275" alt="image" src="https://github.com/user-attachments/assets/0eaa13b0-2426-42b2-b028-26ff98a05cb3" />
+
+
+### 1.2 Breadboard
+
+<img width="1200" height="441" alt="image" src="https://github.com/user-attachments/assets/c37c0db0-974b-4777-8d7a-dca4358ff54f" />
+
+### 1.3 Arduino
+
+<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/f7c36740-8cbf-4caf-ab28-f6ee19e76934" />
 
 -----
 
