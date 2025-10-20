@@ -13,7 +13,7 @@ Firebase es una **plataforma de desarrollo de aplicaciones** de Google que propo
 **Almacenamiento de archivos**:
 - Permite almacenar y servir archivos, como imágenes, con fácil acceso a través de URL mediante el servicio **Storage**.
 
-## Crear cuenta
+## Crear cuenta y proyecto
 
 **PASO 1:** acceder en el navegador a [firebase.google.com](https://firebase.google.com/) y abrir el apartado **Consola**.
 
@@ -34,6 +34,15 @@ Firebase es una **plataforma de desarrollo de aplicaciones** de Google que propo
 
 <img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/a07ca026-a83d-4173-a53f-e6390dbe9e44" />
 
-**Resultado:**
+**Resultado:** espera y da clic en **Continuar**.
 <img width="1662" height="948" alt="image" src="https://github.com/user-attachments/assets/c8a2a428-60f7-49b0-afb2-058aa3c946c1" />
 
+<img width="1666" height="951" alt="image" src="https://github.com/user-attachments/assets/03bc26a3-adab-4978-b10f-699fa3ab75ae" />
+
+**NOTA:** si quieres crear un nuevo proyecto, lo haces desde el dropdownlist superior. 
+
+<img width="1666" height="223" alt="image" src="https://github.com/user-attachments/assets/77ff5955-730c-43ca-a7c6-947e47eb61fd" />
+
+<img width="1663" height="346" alt="image" src="https://github.com/user-attachments/assets/3b8db3eb-b665-4f7e-840c-861335d612ca" />
+
+## FINAL
