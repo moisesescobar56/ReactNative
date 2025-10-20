@@ -1,4 +1,4 @@
-# Configurar Firebase
+# Crear cuenta y proyecto en Firebase
 **¿Que es Firebase?**
 Firebase es una **plataforma de desarrollo de aplicaciones** de Google que proporciona **herramientas y servicios** para crear, mejorar y hacer crecer aplicaciones web y móviles. Algunas de ellas son:
 
