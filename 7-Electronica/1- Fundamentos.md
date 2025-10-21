@@ -16,12 +16,16 @@ Aprenderás a manejar la electricidad de la misma manera que el agua: tiene un f
 
 <img width="617" height="275" alt="image" src="https://github.com/user-attachments/assets/0eaa13b0-2426-42b2-b028-26ff98a05cb3" />
 
+### 1.2 Calculo de resistencias
 
-### 1.2 Breadboard
+<img width="546" height="432" alt="image" src="https://github.com/user-attachments/assets/965779ae-4e9a-4548-a5d4-6465c9401b69" />
+
+
+### 1.3 Breadboard
 
 <img width="1200" height="441" alt="image" src="https://github.com/user-attachments/assets/c37c0db0-974b-4777-8d7a-dca4358ff54f" />
 
-### 1.3 Arduino
+### 1.4 Arduino
 
 <img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/f7c36740-8cbf-4caf-ab28-f6ee19e76934" />
 
