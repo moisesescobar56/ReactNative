@@ -1,0 +1,112 @@
+# App Noticias (Mostrar y registro)
+
+## Clonar proyecto
+
+**PASO 1:** copia y clona en VS Code el proyecto.
+```code
+https://github.com/moisesescobar56/AppNoticiasV2.git
+```
+
+**PASO 2:** al finalizar,abre una terminal e instala los paquetes mediante `npm`.
+```code
+npm install
+```
+
+<img width="1804" height="703" alt="image" src="https://github.com/user-attachments/assets/d2970a93-2146-41d8-8598-737ef6eae390" />
+
+
+## Configurar Firebase.js
+
+**PASO 1:** crea una app en firebase y copia la configuracion en el archivo **`📁api/firebase.js`**.
+
+<img width="1804" height="847" alt="image" src="https://github.com/user-attachments/assets/6a25cd7e-6d46-4a6b-943c-8ab1b1dd33fb" />
+
+**PASO 2:** agrega las importaciones y exportaciones de los servicios al archivo `📁api/firebase.js`.
+
+**Importaciones**
+```js
+import { getAuth } from "firebase/auth"; 
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+```
+
+**Exportaciones**
+```js
+// Inicializar y exportar servicios
+export const auth = getAuth(app);  // autenticar
+export const db = getFirestore(app); // base de datos
+export const storage = getStorage(app); // archivos
+export { app };
+```
+
+<img width="1807" height="851" alt="image" src="https://github.com/user-attachments/assets/015467c2-a4db-45d2-be2e-42217558fd50" />
+
+## Crear servicio
+
+**PASO 1:** en la carpeta `📁 services`, crea un nuevo servicio con el nombre de tu coleccion.
+
+```code
+newService.js
+```
+
+**PASO 2:** agrega las importaciones necesarias en el **newService.js**.
+```js
+import { db } from "../api/firebase";
+import { collection, getDocs, addDoc, doc, query,orderBy, where } from "firebase/firestore";
+// referencia a la collection
+const noticiasRef = collection(db, "noticias");
+```
+
+<img width="1807" height="851" alt="image" src="https://github.com/user-attachments/assets/d6d5eafb-f676-4716-bceb-9baaa67c5a15" />
+
+**PASO 3:** agregar las `function` para realizar las peticiones que se haran a la `collection`.
+```js
+export async function obtenerNoticias() {
+  try {
+    let q = query(noticiasRef, orderBy("fechaHora", "desc"));
+
+    const snap = await getDocs(q);
+    const array = snap.docs.map(d => ({  id: d.id, ...d.data() }));
+    return array;
+
+  } catch (err) {
+    console.error("Error obtenerNoticias:", err);
+  }
+}
+
+export async function agregarNoticia({ titulo, contenido, imagenUrl }) {
+      const noticia = {
+        titulo: titulo.trim(),
+        fechaHora: new Date(),
+        imagenUrl: imagenUrl.trim(),
+        contenido: contenido.trim(),
+      };
+      await addDoc(noticiasRef, noticia);
+}
+```
+
+<img width="1807" height="952" alt="image" src="https://github.com/user-attachments/assets/2ca22e56-1eb6-4150-ad6c-35118ea89340" />
+
+**PASO 4:** agrega `utils  functions` para tratar los datos de tu collection.
+```js
+export function formatDate(d) {
+  // formatear fecha
+  const date = new Date(d.seconds * 1000);
+  return date.toLocaleDateString("es-SV", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+```
+<img width="1807" height="952" alt="image" src="https://github.com/user-attachments/assets/b297df2c-82bb-4738-928c-e2b50762a54e" />
+
+## Implementacion de ObtenerNoticias en NewScreen.js
+
+**PASO 1:** agrega las importaciones necesarias para codificar la logica.
+```js
+import { FlatList, Text, Image, TouchableOpacity, ActivityIndicator, StyleSheet  } from 'react-native';
+import { obtenerNoticias, formatDate } from '../services/newService';
+```
+
+
