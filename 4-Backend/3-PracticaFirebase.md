@@ -101,7 +101,7 @@ export function formatDate(d) {
 ```
 <img width="1807" height="952" alt="image" src="https://github.com/user-attachments/assets/b297df2c-82bb-4738-928c-e2b50762a54e" />
 
-## Implementacion de ObtenerNoticias en NewScreen.js
+## Usar ObtenerNoticias en NewScreen.js
 
 **PASO 1:** agrega las importaciones necesarias para codificar la logica.
 ```js
@@ -109,4 +109,101 @@ import { FlatList, Text, Image, TouchableOpacity, ActivityIndicator, StyleSheet 
 import { obtenerNoticias, formatDate } from '../services/newService';
 ```
 
+**PASO 2:** crea las `variables` que usaras en la screen.
+```js
+const [loading, setLoading] = useState(true);
+    const [datos, setDatos] = useState([]);
+```
 
+**PASO 3:** crea una function **asincrona** para `obtener` los datos de firebase.
+```js
+async function buscar() {
+    try {
+        const lista = await obtenerNoticias();
+        setDatos(lista); // cargar noticias
+    } catch (error) {
+        console.error(error);
+    } finally {
+        setLoading(false);
+    }
+}
+```
+
+**PASO 4:** crea un `useEffect` para actualizar la `screen` cuando se actualicen los datos.
+```js
+useEffect(() => {
+    buscar();
+},[datos]);
+```
+
+**PASO 5:** crea una function de `render`, para crear la informacion en la screen.
+
+```js
+function renderItem({ item }){
+    return (
+        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('ViewNew', { noticia: item })} >
+            <Image style={styles.image} source={{uri: item.imagenUrl}} />
+            <Text style={styles.title}>{item.titulo}</Text>
+            <Text style={styles.date}>{formatDate(item.fechaHora)}</Text>
+        </TouchableOpacity>
+    );
+}
+```
+**PASO 6:** implementa un `ActivityIndicator` para mostrar al usuario que algo esta pasando, es decir estan cargando los datos.
+```js
+if (loading) return <ActivityIndicator style={{ flex: 1 }} />;
+```
+
+**PASO 7:** agrega un `` para renderizar la informacion obtenida de firebase.
+
+```js
+<FlatList
+    data={datos}
+    renderItem={renderItem}
+    keyExtractor={(x) => x.id}
+/>
+```
+
+## Usar agregarNoticia en RegisterNewScreen.js
+
+**PASO 1:** agrega las importaciones necesarias para codificar la logica.
+
+```js
+import { agregarNoticia } from '../services/newService';
+import { Alert } from 'react-native';
+```
+
+**PASO 2:** crea las `variables` que usaras en la screen.
+```js
+const [titulo, setTitulo] = useState('');
+const [imagenUrl, setImagenUrl] = useState('');
+const [contenido, setContenido] = useState('');
+```
+
+**PASO 3:** crea una function **asincrona** para `guardar` los datos de firebase.
+```js
+    async function guardar(){
+        //validar
+        if (!titulo || !imagenUrl || !contenido) {
+          Alert.alert( "Error", "Por favor, completa todos los campos obligatorios." );
+          return;
+        }
+
+        // guardar noticia
+        await agregarNoticia({
+            titulo: titulo,
+            imagenUrl: imagenUrl,
+            contenido: contenido
+        });
+
+        navigation.popToTop(); //cerrar screen
+    }
+```
+
+**PASO 4:** implementa la `function` en la propiedad `onPress` del button.
+```js
+<ButtonRounded title="Guardar" onPress={guardar} />
+```
+
+## Testing
+Al finalizar, inicia la app y realiza las pruebas de la integracion de firebase.
