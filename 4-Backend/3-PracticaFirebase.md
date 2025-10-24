@@ -232,3 +232,5 @@ const [contenido, setContenido] = useState('');
 
 ## Testing
 Al finalizar, inicia la app y realiza las pruebas de la integracion de firebase.
+
+<img width="1140" height="737" alt="image" src="https://github.com/user-attachments/assets/bc6a2b7b-6398-4f64-a969-42d56d402c2d" />
