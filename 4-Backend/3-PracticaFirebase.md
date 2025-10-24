@@ -109,11 +109,15 @@ import { FlatList, Text, Image, TouchableOpacity, ActivityIndicator, StyleSheet 
 import { obtenerNoticias, formatDate } from '../services/newService';
 ```
 
+<img width="1896" height="812" alt="image" src="https://github.com/user-attachments/assets/f02bde9d-2dcc-4253-900a-7be5db1e26b4" />
+
+
 **PASO 2:** crea las `variables` que usaras en la screen.
 ```js
 const [loading, setLoading] = useState(true);
     const [datos, setDatos] = useState([]);
 ```
+<img width="1896" height="812" alt="image" src="https://github.com/user-attachments/assets/b1905abe-ebfb-484a-b8b5-9c33857c0b38" />
 
 **PASO 3:** crea una function **asincrona** para `obtener` los datos de firebase.
 ```js
@@ -129,12 +133,18 @@ async function buscar() {
 }
 ```
 
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/94b8b840-d8f2-4b82-bee9-c8b85caf7c12" />
+
+
 **PASO 4:** crea un `useEffect` para actualizar la `screen` cuando se actualicen los datos.
 ```js
 useEffect(() => {
     buscar();
 },[datos]);
 ```
+
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/199b6d0b-95c1-4179-ba9a-076cdd422cc1" />
+
 
 **PASO 5:** crea una function de `render`, para crear la informacion en la screen.
 
@@ -149,10 +159,15 @@ function renderItem({ item }){
     );
 }
 ```
+<img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/9f01b2b6-052e-4d42-ab96-f1e45834ae75" />
+
 **PASO 6:** implementa un `ActivityIndicator` para mostrar al usuario que algo esta pasando, es decir estan cargando los datos.
 ```js
 if (loading) return <ActivityIndicator style={{ flex: 1 }} />;
 ```
+
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/0c838323-eb94-4861-bf22-47bd8d78843e" />
+
 
 **PASO 7:** agrega un `` para renderizar la informacion obtenida de firebase.
 
@@ -164,6 +179,9 @@ if (loading) return <ActivityIndicator style={{ flex: 1 }} />;
 />
 ```
 
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/59d111ac-6bdc-4b45-adc0-9aa5809ffd43" />
+
+
 ## Usar agregarNoticia en RegisterNewScreen.js
 
 **PASO 1:** agrega las importaciones necesarias para codificar la logica.
@@ -173,12 +191,16 @@ import { agregarNoticia } from '../services/newService';
 import { Alert } from 'react-native';
 ```
 
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/7b485c5b-b0fd-46a4-8b5d-c75fa336aa5d" />
+
+
 **PASO 2:** crea las `variables` que usaras en la screen.
 ```js
 const [titulo, setTitulo] = useState('');
 const [imagenUrl, setImagenUrl] = useState('');
 const [contenido, setContenido] = useState('');
 ```
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/80ba3e8d-f4d4-4771-8de9-ef9710394b84" />
 
 **PASO 3:** crea una function **asincrona** para `guardar` los datos de firebase.
 ```js
@@ -200,10 +222,13 @@ const [contenido, setContenido] = useState('');
     }
 ```
 
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/18417f26-8ba9-488d-90e4-8a8b8ab92017" />
+
 **PASO 4:** implementa la `function` en la propiedad `onPress` del button.
 ```js
 <ButtonRounded title="Guardar" onPress={guardar} />
 ```
+<img width="1927" height="1027" alt="image" src="https://github.com/user-attachments/assets/1e748b80-6bb7-4f24-a090-3cdbc857e531" />
 
 ## Testing
 Al finalizar, inicia la app y realiza las pruebas de la integracion de firebase.
