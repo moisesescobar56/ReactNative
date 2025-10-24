@@ -52,6 +52,9 @@ El objetivo de este ejercicio es encender el LED de forma segura, usando una res
 3.  **Conexión a la Fuente:**
       * Conecta **GND** (Tierra/Negativo) de la fuente a la línea GND de la protoboard.
       * Conecta **+5V** (Positivo) de la fuente a la columna donde está el Ánodo del LED.
+  
+  <img width="912" height="577" alt="image" src="https://github.com/user-attachments/assets/b43cf497-ea61-47c7-ae43-0042fa1b041a" />
+
 
 > [!WARNING]
 > **¡Advertencia\!** Nunca conectes el LED directamente a la fuente de poder sin una resistencia. Se quemará inmediatamente.
@@ -75,36 +78,32 @@ En lugar de usar la línea de +5V de la protoboard, usaremos un pin digital de A
 2.  **Conecta la Tierra:** Conecta el extremo de la resistencia (Cátodo del LED) al pin **GND** (Tierra) del Arduino.
 3.  **Conecta la Señal:** Conecta el **Ánodo** (pata larga) del LED al **Pin Digital 13** del Arduino.
 
+<img width="1731" height="797" alt="image" src="https://github.com/user-attachments/assets/107692d4-d97b-49b8-9338-d83fc4a61e96" />
+
+
 ### 3.3 El Código "Blink" en Arduino IDE
 
 Copia este código, súbelo a tu placa Arduino y observa cómo el LED parpadea.
 
 ```cpp
-// ------------------------------------------
-// CÓDIGO ARDUINO: PROYECTO BLINK
-// ------------------------------------------
-
 // 1. ASIGNACIÓN DE PIN: Define el pin que vamos a usar
 const int LED_PIN = 13;
 
 // 2. FUNCIÓN SETUP: Se ejecuta una sola vez al inicio
 void setup() {
   // Configura el pin 13 como una SALIDA (OUTPUT)
-  // Esto le permite al Arduino enviar voltaje para encender el LED
   pinMode(LED_PIN, OUTPUT);
 }
 
 // 3. FUNCIÓN LOOP: Se repite infinitamente
 void loop() {
   // ACCIÓN 1: ENCENDER el LED
-  // Manda voltaje ALTO (HIGH) al pin
   digitalWrite(LED_PIN, HIGH);
   
   // ESPERA 1 segundo (1000 milisegundos)
   delay(1000);
   
   // ACCIÓN 2: APAGAR el LED
-  // Manda voltaje BAJO (LOW) al pin
   digitalWrite(LED_PIN, LOW);
   
   // ESPERA 1 segundo (1000 milisegundos)
