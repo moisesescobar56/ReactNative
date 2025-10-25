@@ -12,7 +12,7 @@ npx expo install @react-native-picker/picker
 <img width="1651" height="860" alt="image" src="https://github.com/user-attachments/assets/0b1a9697-19ec-43ac-96fd-5b43e21b76ad" />
 
 
-**PASO 2:** agrega las dependencias y crea la estructura del componente.
+**PASO 3:** agrega las dependencias y crea la estructura del componente.
 
 ```js
 import React, { useState } from 'react';
@@ -58,7 +58,7 @@ export default function Select({ label, options, initialValue, onSelect }) {
 <img width="1927" height="1087" alt="image" src="https://github.com/user-attachments/assets/20efd72c-a9b5-4f4c-9559-6625270b0eef" />
 
 
-**PASO 3:** Crea el diseño del componente.
+**PASO 4:** Crea el diseño del componente.
 ```js
 const styles = StyleSheet.create({
   container:{
@@ -128,9 +128,10 @@ const GENEROS = [
 <img width="1931" height="1091" alt="image" src="https://github.com/user-attachments/assets/936cfaad-30b2-4f12-a342-3d6861c56854" />
 
 
-**PASO 4:** Iniciar la app en **`Expo Go`** y verificar que funcione.
+**PASO 5:** Iniciar la app en **`Expo Go`** y verificar que funcione.
 
 
+<img width="1121" height="737" alt="image" src="https://github.com/user-attachments/assets/eac5d4b9-12f2-4396-9038-c6a0fc3e5b5f" />
 
 ## Codigo completo:
 ```js
@@ -198,4 +199,3 @@ const styles = StyleSheet.create({
 });
 ```
 
-<img width="1121" height="737" alt="image" src="https://github.com/user-attachments/assets/eac5d4b9-12f2-4396-9038-c6a0fc3e5b5f" />
