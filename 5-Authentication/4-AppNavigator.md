@@ -25,6 +25,7 @@ import AppTabs from '../navigation/AppTabs';
 // importar screens que no se usan tabs
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from  '../screens/RegisterScreen';
+import RegisterNewScreen from  '../screens/RegisterNewScreen';
 import ViewNewScreen from '../screens/ViewNewScreen';
 
 // importar react navigation
@@ -50,7 +51,8 @@ const AuthStack = () => (
 const AppStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Home" component={AppTabs} options={{ headerShown:false }}  />
-    <Stack.Screen name="ViewNew" component={ViewNewScreen} options={{ title: "Ver Noticia" }}  />
+    <Stack.Screen name="RegisterNew" component={RegisterNewScreen} options={{ title: "Registrar noticia" }}  />
+    <Stack.Screen name="ViewNew" component={ViewNewScreen} options={{ title: "Ver noticia" }}  />
   </Stack.Navigator>
 );
 
@@ -94,4 +96,13 @@ export default function AppNavigator () {
 3. Actualiza **`AppStack`** con las screens que **requieren** iniciar sesion.
 <img width="1424" height="217" alt="image" src="https://github.com/user-attachments/assets/6b29ec1e-1a01-41f9-9ec6-131d186c9c84" />
 
-4. 
+
+## Distribucion en Tabs o Drawer
+
+**NOTA:** recuerda que la navegacion personalizada (Tabs o Drawer) tambien crea rutas de navegacion. 
+
+Distribucion de screens:
+- **AuthStack**: LoginScreen y RegisterScreen.
+- **AppStack**: AppTabs **(** NewScreen y ProfileScreen **)**, RegisterNewScreen y ViewNewScreen.
+
+
