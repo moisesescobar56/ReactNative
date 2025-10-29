@@ -33,5 +33,20 @@
 
 **NOTA:** si ya tienes una **base de datos de `firestore`** y **collection de `usuarios`**, puedes omitir estos pasos.
 
-
+**PASO 1:** accede en el panel lateral a **Authentication** y haz clic en **Comenzar**.
 <img width="1730" height="859" alt="image" src="https://github.com/user-attachments/assets/9ed5761b-2f1e-4ccf-8b78-3ddcee1e9cfe" />
+
+**PASO 2:** seleccionar la edicion **Estandar** y haz clic en **Siguiente**.
+
+<img width="1730" height="859" alt="image" src="https://github.com/user-attachments/assets/7e12acf1-309a-45ed-be3a-e2bcf826c7ef" />
+
+**PASO 3:** haz clic en **Siguiente**.
+<img width="1730" height="859" alt="image" src="https://github.com/user-attachments/assets/7d6b696a-b453-4995-8592-6a3e9bfcd6b2" />
+
+**PASO 4:** selecciona **Comenzar en `Modo prueba`** y haz clic en **Crear**.
+
+<img width="1730" height="976" alt="image" src="https://github.com/user-attachments/assets/b8990688-95e9-4cde-b6ba-530ee03e9122" />
+
+**Resultado:**
+
+<img width="1924" height="1024" alt="image" src="https://github.com/user-attachments/assets/1ce72287-b02b-4034-9a6f-d422055ef62a" />
