@@ -97,7 +97,7 @@ export default function AppNavigator () {
 <img width="1424" height="217" alt="image" src="https://github.com/user-attachments/assets/6b29ec1e-1a01-41f9-9ec6-131d186c9c84" />
 
 
-## Distribucion en Tabs o Drawer
+### Distribucion en Tabs o Drawer
 
 **NOTA:** recuerda que la navegacion personalizada (Tabs o Drawer) tambien crea rutas de navegacion. 
 
@@ -105,4 +105,21 @@ Distribucion de screens:
 - **AuthStack**: LoginScreen y RegisterScreen.
 - **AppStack**: AppTabs **(** NewScreen y ProfileScreen **)**, RegisterNewScreen y ViewNewScreen.
 
+## Actualizar App.js
+
+**PASO 1:** abre el archivo `App.js`.
+
+**PASO 2:** actualizar la logica con el siguiente codigo.
+```js
+import AppNavigator from './navigation/AppNavigator';
+
+// exportar App
+export default function App() {
+  return (
+    <AppNavigator />
+  );
+}
+```
+
+<img width="1507" height="747" alt="image" src="https://github.com/user-attachments/assets/6472dae7-1756-4b02-b22d-f291bdf21205" />
 
