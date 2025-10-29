@@ -115,7 +115,7 @@ export const useAuth = () => {
 ## Explicacion del AuthContext.js
 
 1. Agregar importanciones necesarias
-<img width="1556" height="126" alt="image" src="https://github.com/user-attachments/assets/a9163180-f158-48a2-a416-d6eb6933cf8c" />
+<img width="1560" height="130" alt="image" src="https://github.com/user-attachments/assets/12de90dd-7dfa-4617-bd9e-abab6257bb85" />
 
 2. Crear Context, para implementar la logica de **`login`, `register` y `logout`**.
 <img width="490" height="81" alt="image" src="https://github.com/user-attachments/assets/1c4b5ed7-e209-49ca-8987-0d9fe4532c9f" />
