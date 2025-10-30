@@ -184,3 +184,12 @@ useEffect(() => {
 
 Inicia tu app y accede desde **_Expo Go_**.
 
+<img width="2819" height="2851" alt="image" src="https://github.com/user-attachments/assets/2c26592e-6bfe-4292-a95c-23eecdfdc7b9" />
+
+
+## Datos almacenados en Authentication y Firestore
+
+<img width="1730" height="976" alt="image" src="https://github.com/user-attachments/assets/783cb279-f686-410c-9546-9c689f5ed908" />
+
+<img width="1726" height="972" alt="image" src="https://github.com/user-attachments/assets/30a1b5c9-9fef-49f3-bd78-10abbdf9d045" />
+
